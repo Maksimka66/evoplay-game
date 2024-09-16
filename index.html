@@ -22,46 +22,51 @@
 
     
     <script type="module" crossorigin src="/evoplay-game/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/evoplay-game/assets/index-d3909161.css">
+    <link rel="stylesheet" href="/evoplay-game/assets/index-70b59c47.css">
   </head>
 
   <body>
     <header class="header">
  <div class="mobile-header-cont">
    <svg class="game-logo" width="32" height="32" aria-label="game logo icon"></svg>
-    <use href="../img/sprite.svg#"></use>
+    <use href="/evoplay-game/assets/sprite-acf2a00f.svg#"></use>
    </svg>
    
    <button class="burger-btn" type="button">
     <svg class="burger-btn-icon" width="28" height="20" aria-label="mobile menu open icon">
-      <use href="../img/sprite.svg#icon-Menu"></use>
+      <use href="/evoplay-game/assets/sprite-acf2a00f.svg#icon-Menu"></use>
     </svg>
    </button>
   </div>
 
+<div class="desktop-header-cont">
+  <img />
   <nav class="nav">
     <ul class="nav-list">
       <li class="nav-list-item">
-        <a href="">Home</a>
+        <a class="nav-list-link" href="#home">Home</a>
       </li>
       <li class="nav-list-item">
-        <a href="">Benefits</a>
+        <a class="nav-list-link" href="#benefits">Benefits</a>
       </li>
       <li class="nav-list-item">
-        <a href="">About</a>
+        <a class="nav-list-link" href="#about">About</a>
       </li>
       <li class="nav-list-item">
-        <a href="">Gallery</a>
+        <a class="nav-list-link" href="#gallery">Gallery</a>
       </li>
       <li class="nav-list-item">
-        <a href="">How to play</a>
+        <a class="nav-list-link" href="#how-to-play">How to play</a>
       </li>
       <li class="nav-list-item">
-        <a href="">Reviews</a>
+        <a class="nav-list-link" href="#reviews">Reviews</a>
       </li>
-      <li class="nav-list-item"><a href="">FAQ</a></li>
+      <li class="nav-list-item">
+        <a class="nav-list-link" href="#faq">FAQ</a></li>
     </ul>
   </nav>
+  <img />
+ </div>
 </header>
 
     <main>
@@ -75,34 +80,35 @@
       Get it on <span>Google Play</span>
     </button>
   </div>
+  <div class="background-home-cont"></div>
 </section>
 
       <section class="benefits" id="benefits">
   <ul class="benefits-list">
     <li class="benefits-list-item">
-      <svg class="benefits-icon" width="40" height="40">
-        <use href="../img/sprite.svg#Play Market logo.png"></use>
+      <svg class="benefits-icon-first">
+        <use href="/evoplay-game/assets/sprite-acf2a00f.svg#Play%20Market%20logo.png"></use>
       </svg>
       <div class="benefits-line"></div>
       <p class="benefits-text">4.8</p>
     </li>
     <li class="benefits-list-item">
-      <svg class="benefits-icon" width="40" height="40">
-        <use href="../img/sprite.svg#Download icon"></use>
+      <svg class="benefits-icon-first">
+        <use href="/evoplay-game/assets/sprite-acf2a00f.svg#Download%20icon"></use>
       </svg>
       <div class="benefits-line"></div>
       <p class="benefits-text">50 000+</p>
     </li>
     <li class="benefits-list-item">
-      <svg class="benefits-icon" width="60" height="40">
-        <use href="../img/sprite.svg#Game Logo.png"></use>
+      <svg class="benefits-icon-second">
+        <use href="/evoplay-game/assets/sprite-acf2a00f.svg#Game%20Logo.png"></use>
       </svg>
       <div class="benefits-line"></div>
       <p class="benefits-text">1 000 +</p>
     </li>
     <li class="benefits-list-item">
-      <svg class="benefits-icon" width="60" height="40">
-        <use href="../img/sprite.svg#Vector (2)"></use>
+      <svg class="benefits-icon-second">
+        <use href="/evoplay-game/assets/sprite-acf2a00f.svg#Vector%20(2)"></use>
       </svg>
       <div class="benefits-line"></div>
       <p class="benefits-text">Online/Offline</p>
@@ -123,16 +129,9 @@
           challenges, from rescuing a certain number of birds to achieving high
           scores, all while encountering new obstacles and power-ups.
         </p>
-        <img
-          class="about-screen"
-          srcset="../img/gallery/about-screen-first@2x.jpg"
-          src="../img/gallery/about-screen-first.jpg"
-          alt="about first screen"
-          width="118"
-          height="211"
-        />
+        <div class="about-screen-first"></div>
       </li>
-      <li class="about-list-item">
+      <li class="about-list-item item-reverse">
         <p class="about-text">
           As you advance, you’ll unlock special boosters and discover exciting
           bubble combinations that can help you tackle even the most difficult
@@ -143,14 +142,7 @@
           this game is sure to captivate you from the first shot. Start your
           bubble-popping adventure today and see how many birds you can rescue!
         </p>
-        <img
-          class="about-screen"
-          srcset="../img/gallery/about-screen-second@2x.jpg"
-          src="../img/gallery/about-screen-second.jpg"
-          alt="about first screen"
-          width="118"
-          height="211"
-        />
+        <div class="about-screen-second"></div>
       </li>
     </ul>
   </div>
@@ -177,7 +169,7 @@
 </section>
 
       <section class="how-to-play-container" id="how-to-play">
-  <h2>How to play</h2>
+  <h2 class="how-to-play-header">How to play</h2>
   <div class="steps">
     <div class="step step-1">
       <span class="number">1</span>
@@ -283,7 +275,7 @@
 
       <section class="faq" id="faq">
   <div class="faq-container">
-    <h2>Any questions?</h2>
+    <h2 class="questions-header">Any questions?</h2>
     <div class="faq-item">
       <button class="faq-question">
         Can I play offline? <span class="plus">+</span>
@@ -325,8 +317,8 @@
     <div class="modal-overlay">
   <div class="mobile-menu">
     <button class="close-menu-button" type="button">
-      <svg class="close-menu-icon">
-        <use href="../img/sprite.svg#icon-Vector-15"></use>
+      <svg class="close-menu-icon" width="36" height="36">
+        <use href="/evoplay-game/assets/sprite-acf2a00f.svg#icon-Vector-15"></use>
       </svg>
     </button>
 
