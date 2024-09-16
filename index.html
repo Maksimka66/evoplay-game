@@ -13,22 +13,30 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100..900&family=Matemasie&display=swap"
+      rel="stylesheet"
+    />
+
     
     <script type="module" crossorigin src="/evoplay-game/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/evoplay-game/assets/index-f7610b25.css">
+    <link rel="stylesheet" href="/evoplay-game/assets/index-d3909161.css">
   </head>
 
   <body>
     <header class="header">
  <div class="mobile-header-cont">
    <svg class="game-logo" width="32" height="32" aria-label="game logo icon"></svg>
-    <use href=""></use>
-  </svg>
-  <button class="" type="button">
-    <svg class="burger-btn" width="28" aria-label="mobile menu open icon">
-      <use href=""></use>
+    <use href="../img/sprite.svg#"></use>
+   </svg>
+   
+   <button class="burger-btn" type="button">
+    <svg class="burger-btn-icon" width="28" height="20" aria-label="mobile menu open icon">
+      <use href="../img/sprite.svg#icon-Menu"></use>
     </svg>
-  </button>
+   </button>
   </div>
 
   <nav class="nav">
@@ -158,7 +166,7 @@
     </p>
     <ul class="gallery-images-list">
       <li class="gallery-image">
-        <img src="../img/gallery/Screen 1 (2).jpg" />
+        <!-- <img src="../img/gallery/Screen 1 (2).jpg" /> -->
       </li>
       <li class="gallery-image"></li>
       <li class="gallery-image"></li>
@@ -314,6 +322,43 @@
 
     </main>
 
+    <div class="modal-overlay">
+  <div class="mobile-menu">
+    <button class="close-menu-button" type="button">
+      <svg class="close-menu-icon">
+        <use href="/src/img/sprite.svg#icon-Vector-15"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu-list">
+      <li class="mobile-menu-item">
+        <a href="#home" class="mobile-menu-link">Home</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#benefits" class="mobile-menu-link">Benefits</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#about" class="mobile-menu-link">About</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#gallery" class="mobile-menu-link">Gallery</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#how-to-play" class="mobile-menu-link">How to play</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#reviews" class="mobile-menu-link">Reviews</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#faq" class="mobile-menu-link">FAQ</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+    
+    
     
   </body>
 </html>
