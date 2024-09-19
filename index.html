@@ -34,7 +34,8 @@
 
     
     <script type="module" crossorigin src="/evoplay-game/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/evoplay-game/assets/styles-e2b38edf.css">
+    <link rel="modulepreload" crossorigin href="/evoplay-game/assets/vendor-5a765f43.js">
+    <link rel="stylesheet" href="/evoplay-game/assets/styles-3e785aa0.css">
   </head>
 
   <body>
@@ -208,7 +209,6 @@
       <section class="gallery" id="gallery">
   <div class="gallery-container">
     <h2 class="gallery-header">Gallery</h2>
-    <div class="gallery-blur"></div>
     <div class="gallery-content">
       <p class="gallery-text">
         Immerse yourself in the colorful and captivating world of Bubble Bird
@@ -222,46 +222,44 @@
           </svg>
         </button>
 
-        <div class="swiper-container mySwiper">
-          <div class="swiper-wrapper">
-            <ul class="gallery-list">
-              <li class="gallery-item swiper-slide">
-                <img
-                  src="/evoplay-game/assets/gallery-first-a1e653ac.jpg"
-                  alt="first image"
-                  class="gallery-picture"
-                />
-              </li>
-              <li class="gallery-item swiper-slide">
-                <img
-                  src="/evoplay-game/assets/gallery-second-bf326f7e.jpg"
-                  alt="second image"
-                  class="gallery-picture"
-                />
-              </li>
-              <li class="gallery-item swiper-slide">
-                <img
-                  src="/evoplay-game/assets/gallery-third-aa771d52.jpg"
-                  alt="third image"
-                  class="gallery-picture"
-                />
-              </li>
-              <li class="gallery-item swiper-slide">
-                <img
-                  src="/evoplay-game/assets/gallery-fourth-fd2d04f7.jpg"
-                  alt="fourth image"
-                  class="gallery-picture"
-                />
-              </li>
-              <li class="gallery-item swiper-slide">
-                <img
-                  src="/evoplay-game/assets/gallery-fifth-0f30aa23.jpg"
-                  alt="fifth image"
-                  class="gallery-picture"
-                />
-              </li>
-            </ul>
-          </div>
+        <div class="swiper swiper-container mySwiper">
+          <ul class="gallery-list swiper-wrapper">
+            <li class="gallery-item swiper-slide">
+              <img
+                src="/evoplay-game/assets/gallery-first-a1e653ac.jpg"
+                alt="first image"
+                class="gallery-picture"
+              />
+            </li>
+            <li class="gallery-item swiper-slide">
+              <img
+                src="/evoplay-game/assets/gallery-second-bf326f7e.jpg"
+                alt="second image"
+                class="gallery-picture"
+              />
+            </li>
+            <li class="gallery-item swiper-slide">
+              <img
+                src="/evoplay-game/assets/gallery-third-aa771d52.jpg"
+                alt="third image"
+                class="gallery-picture"
+              />
+            </li>
+            <li class="gallery-item swiper-slide">
+              <img
+                src="/evoplay-game/assets/gallery-fourth-fd2d04f7.jpg"
+                alt="fourth image"
+                class="gallery-picture"
+              />
+            </li>
+            <li class="gallery-item swiper-slide">
+              <img
+                src="/evoplay-game/assets/gallery-fifth-0f30aa23.jpg"
+                alt="fifth image"
+                class="gallery-picture"
+              />
+            </li>
+          </ul>
         </div>
         <button class="scroll right" type="button">
           <svg class="arrow-icon">
@@ -572,11 +570,5 @@
 
 
     
-    
-    
-    
-    
-    
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>
